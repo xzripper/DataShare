@@ -183,7 +183,7 @@ class FunctionsCaller:
             elif not debug:
                 return None
 
-    def callif(self, name: str, expression: bool, funcindex: callable, debug: bool, *args: tuple[object]) -> Union[None, Exception]:
+    def callif(self, name: str, expression: bool, funcindex: int, debug: bool, *args: tuple[object]) -> Union[None, Exception]:
         """Call if expression is true function."""
         assert type(name) is str, 'name must be string'
         assert type(expression) is bool, 'expression must be bool'
@@ -200,4 +200,4 @@ class FunctionsCaller:
                 elif not debug:
                     return None
 
-DATASHARE_VERSION = 1.0
+DATASHARE_VERSION = 1.1
